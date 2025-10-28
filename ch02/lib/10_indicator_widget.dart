@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
-      home: const MyHomePage(title: '10.인디케이터 위젯 실습!'),
+      home: const MyHomePage(title: '10.인디케이터 위젯 실습'),
     );
   }
 }
@@ -37,28 +37,28 @@ class _MyHomePageState extends State<MyHomePage> {
       body: Column(
         children: [
           Text('원형 인디케이터'),
-          SizedBox(height: 50,),
+          SizedBox(height: 50),
           CircularProgressIndicator(),
-          SizedBox(height: 50,),
+          SizedBox(height: 50),
           CircularProgressIndicator(
             strokeWidth: 10,
             valueColor: AlwaysStoppedAnimation(Colors.red),
-            value: 0.5, //진행률(없으면 무한 회전)
+            value: 0.5, // 진행률(없으면 무한 회전)
           ),
-          SizedBox(height: 50,),
+          SizedBox(height: 50),
           Text('선형 인디케이터'),
-          SizedBox(height: 50,),
+          SizedBox(height: 50),
           LinearProgressIndicator(),
-          SizedBox(height: 50,),
+          SizedBox(height: 50),
           LinearProgressIndicator(
-            value: 0.9,
+            value: 0.6,
             backgroundColor: Colors.grey,
             color: Colors.blue,
             minHeight: 10,
           ),
+
         ],
       )
-
     );
   }
 }
